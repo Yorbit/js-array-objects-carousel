@@ -89,3 +89,23 @@ prevBtn.addEventListener('click', function () {
     containerList[slideActive].classList.remove('d-none');
 
 });
+
+const nextBtn = document.getElementById('next');
+
+nextBtn.addEventListener('click', function () {
+
+
+    containerList[slideActive].classList.add('d-none');
+
+    ++slideActive;
+
+
+    if (slideActive === images.length) {
+
+        slideActive = 0;
+
+    }
+
+    containerList[slideActive].classList.remove('d-none');
+
+});
