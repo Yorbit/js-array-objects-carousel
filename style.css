@@ -1,0 +1,25 @@
+.width {
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.title-img {
+    color: white;
+    font-weight: bold;
+    top: 20px;
+    right: 30px;
+}
+
+.subtitle-img {
+    color: white;
+    top: 60px;
+    right: 30px;
+}
+
+.block {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
