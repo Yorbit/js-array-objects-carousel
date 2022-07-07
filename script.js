@@ -65,3 +65,27 @@ images.forEach((element, index) => {
 
     appendParent(newContainer);
 });
+
+const parentWrap = document.getElementById('wrap');
+
+let slideActive = 0;
+
+let containerList = parentWrap.children;
+
+const prevBtn = document.getElementById('prev');
+
+prevBtn.addEventListener('click', function () {
+
+    containerList[slideActive].classList.add('d-none');
+
+    --slideActive;
+
+    if (slideActive === -1) {
+
+        slideActive = images.length - 1;
+
+    }
+
+    containerList[slideActive].classList.remove('d-none');
+
+});
